@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}India 101{% endblock %}
+
+{% block breadcrumb %}
+
+  <li class="breadcrumb-item active">You are eligible for</li>
+{% endblock %}
+
+{% block content %}
+    {% for i in oppurtunity %}
+        {{ i.name }}
+    {% endfor %}
+{% endblock %}
