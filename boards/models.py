@@ -16,8 +16,11 @@ GENDER = (
 )
 
 
-class Oppurtunities(models.Model):
-    name = models.TextField(max_length=100)
+class Opportunity(models.Model):
+    """
+
+    """
+    name = models.CharField(max_length=100)
     type = models.CharField(max_length=7, choices=TYPE, default='govt')
     brief_info = models.TextField(max_length=1000)
     age_criteria = models.IntegerField()
